@@ -149,7 +149,7 @@ class _NonogramPuzzleState extends State<NonogramPuzzle> {
               ),
             const SizedBox(height: 20),
             // Kiểm tra xem đã giải đúng chưa
-            if (!isSolved())
+            if (isSolved())
               Container(
                   width: MediaQuery.of(context).size.width/1.6,
                 child: const Text('Congratulations! You solved the heart puzzle!', style: TextStyle(fontSize: 20, color: Colors.pink)),
